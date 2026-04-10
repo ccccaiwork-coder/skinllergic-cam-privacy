@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>肌敏雷達 隱私權政策 | Skinllergic Cam Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            line-height: 1.8;
+            color: #333;
+            background: #fafafa;
+        }
+        h1 { font-size: 1.6em; border-bottom: 2px solid #E05C4A; padding-bottom: 8px; }
+        h2 { font-size: 1.2em; color: #E05C4A; margin-top: 2em; }
+        .date { color: #888; font-size: 0.9em; }
+        .lang-toggle { text-align: right; margin-bottom: 16px; }
+        .lang-toggle a { color: #E05C4A; cursor: pointer; text-decoration: underline; }
+        .en { display: none; }
+        a { color: #E05C4A; }
+    </style>
+</head>
+<body>
+
+<div class="lang-toggle">
+    <a onclick="toggleLang()">English Version</a>
+</div>
+
+<!-- 中文版 -->
+<div id="zh" class="zh">
+    <h1>肌敏雷達 — 隱私權政策</h1>
+    <p class="date">生效日期：2026 年 4 月 10 日</p>
+
+    <h2>概述</h2>
+    <p>肌敏雷達（Skinllergic Cam）非常重視您的隱私。本政策說明我們如何處理您的資料。</p>
+
+    <h2>資料收集與儲存</h2>
+    <p>本 App <strong>不會收集、傳輸或儲存任何個人資料至外部伺服器</strong>。所有資料（包括掃描紀錄、已儲存產品、個人過敏原清單）皆僅儲存於您的裝置本機。</p>
+
+    <h2>相機與相簿權限</h2>
+    <p>本 App 需要存取您的相機或相簿，以拍攝或選擇成分標籤照片進行 OCR 文字辨識。這些照片僅在您的裝置上處理，不會上傳至任何伺服器。</p>
+
+    <h2>第三方服務</h2>
+    <p>本 App 不使用任何第三方分析工具、廣告 SDK 或追蹤服務。</p>
+
+    <h2>資料分享</h2>
+    <p>本 App 不會與任何第三方分享您的資料。您可以選擇透過系統內建的分享功能匯出掃描報告，但這完全由您自行決定。</p>
+
+    <h2>兒童隱私</h2>
+    <p>本 App 不會收集任何使用者的個人資訊，包括兒童。</p>
+
+    <h2>政策更新</h2>
+    <p>如本政策有所變更，我們將在此頁面更新內容與生效日期。</p>
+
+    <h2>聯絡我們</h2>
+    <p>如有任何隱私相關問題，請聯繫：<a href="mailto:ccccaiwork-coder@gmail.com">ccccaiwork-coder@gmail.com</a></p>
+</div>
+
+<!-- English Version -->
+<div id="en" class="en">
+    <h1>Skinllergic Cam — Privacy Policy</h1>
+    <p class="date">Effective Date: April 10, 2026</p>
+
+    <h2>Overview</h2>
+    <p>Skinllergic Cam values your privacy. This policy explains how we handle your data.</p>
+
+    <h2>Data Collection & Storage</h2>
+    <p>This app <strong>does not collect, transmit, or store any personal data on external servers</strong>. All data (including scan history, saved products, and personal allergen lists) is stored solely on your device.</p>
+
+    <h2>Camera & Photo Library Access</h2>
+    <p>This app requires access to your camera or photo library to capture or select ingredient label photos for OCR text recognition. These photos are processed only on your device and are never uploaded to any server.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>This app does not use any third-party analytics tools, advertising SDKs, or tracking services.</p>
+
+    <h2>Data Sharing</h2>
+    <p>This app does not share your data with any third parties. You may choose to export scan reports via the system's built-in sharing feature, but this is entirely at your discretion.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>This app does not collect any personal information from any users, including children.</p>
+
+    <h2>Policy Updates</h2>
+    <p>If this policy changes, we will update the content and effective date on this page.</p>
+
+    <h2>Contact Us</h2>
+    <p>For any privacy-related questions, please contact: <a href="mailto:ccccaiwork-coder@gmail.com">ccccaiwork-coder@gmail.com</a></p>
+</div>
+
+<script>
+    function toggleLang() {
+        const zh = document.getElementById('zh');
+        const en = document.getElementById('en');
+        const link = document.querySelector('.lang-toggle a');
+        if (en.style.display === 'none' || en.classList.contains('en')) {
+            en.style.display = 'block';
+            en.classList.remove('en');
+            zh.style.display = 'none';
+            link.textContent = '中文版';
+        } else {
+            zh.style.display = 'block';
+            en.style.display = 'none';
+            en.classList.add('en');
+            link.textContent = 'English Version';
+        }
+    }
+</script>
+
+</body>
+</html>
